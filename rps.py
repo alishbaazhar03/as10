@@ -3,7 +3,7 @@
 #   https://realpython.com/python-rock-paper-scissors/
 
 import random
-
+while True:
 user_action = input("Enter throw (rock, paper, scissors): ")
 ai_action = random.choice(["rock", "paper", "scissors"])
 
@@ -26,3 +26,10 @@ elif user_action == "scissors":
         print("Scissors cuts paper! You win!")
     else:
         print("Rock smashes scissors! You lose.")
+else:Print("Invalid choices!")
+
+playAgain = input ("Do you want to play again?")
+    if playAgain != "Yes":
+    print("Thank you for playing!")
+    break
+
